@@ -39,7 +39,7 @@ public class MeetingController {
     @GetMapping("/meeting/getFreeTime")
     public ResponseEntity<List<FreeTimeDto>> getFreeTime(
             @ApiParam(
-                    value = "Новая встреча",
+                    value = "Начальная временная граница",
                     required = true,
                     example = "2022-07-08 00:00",
                     type = "java.time"
@@ -51,7 +51,7 @@ public class MeetingController {
                     LocalDateTime startBorderTime,
 
             @ApiParam(
-                    value = "Новая встреча",
+                    value = "Конечная временная граница",
                     required = true,
                     example = "2022-07-08 23:00",
                     type = "java.time"

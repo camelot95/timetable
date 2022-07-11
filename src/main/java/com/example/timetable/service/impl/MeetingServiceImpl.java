@@ -70,7 +70,7 @@ public class MeetingServiceImpl implements MeetingService {
         for (Meeting meeting : meetingList
         ) {
             raspisanie.add(String.format("%s  %s  %s", meeting.getMeetingTimeStart(), " - начало встречи у пользователя ", meeting.getUserid()));
-            raspisanie.add(String.format("%s  %s  %s", meeting.getMeetingTimeStop(), " - конец встречи у пользователя ", meeting.getUserid()));
+            raspisanie.add(String.format("%s  %s  %s", meeting.getMeetingTimeStop(), " - конец встречи у пользователя  ", meeting.getUserid()));
         }
         raspisanie = raspisanie.stream().distinct().sorted().collect(Collectors.toList());
 
